@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+}
+
+#main_player,
+#bot_player {
+    margin: 0;
+    width: fit-content;
+    transform: scale(-1, 1);
+}
+
+#main_player {
+    margin-top: 1%;
+}
+
+.race-track {
+    width: 61%;
+    margin: 0;
+}
+
+#para {
+    padding: 10px;
+    width: fit-content;
+    border: 2px solid black;
+    border-radius: 1%;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: not-allowed;
+}
+
+h4 {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    width: 70px;
+}
+
+#timer {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 45%;
+    width: fit-content;
+    border: 1px solid #dadce0;
+}
+
+.finish_line {
+    position: absolute;
+    left: 0;
+    left: 57%;
+    top: 7%;
+    width: fit-content;
+    transform: rotate(0.25turn);
+}
+
+@media (max-width: 700px;
+) {
+    .finish_line {
+        top: -2%;
+        height: 15%;
+    }
+    #para {
+        font-size: 5px;
+    }
+}
+
+@media (max-width:900px) {
+    .race-track {
+        width: 69%;
+    }
+}
+
+@media(max-width:620px) {
+    .race-track {
+        width: 70%;
+    }
+}
+
+@media(max-width:477px) {
+    .finish_line {
+        top: -1%;
+        left: 50%;
+        height: 15%;
+    }
+}
+
+#main_player {
+    position: relative;
+    z-index: 1;
+}
+
+#bot_player {
+    position: relative;
+    z-index: 1;
+}
+
+#hide_div,
+#hide_div2 {
+    display: none;
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    opacity: 0.7;
+}
+
+#hide_div button,
+#hide_div2 button {
+    display: flex;
+    position: fixed;
+    right: 0;
+    font-size: 20px;
+    width: fit-content;
+    background: white;
+    color: red;
+    border: 0;
+    padding: 0;
+    padding-right: 12px;
+}
+
+#hide_div button:hover,
+#hide_div2 button:hover {
+    background: red;
+    color: black;
+}
+
+#hide_div button:hover .cancel,
+#hide_div2 button:hover .cancel {
+    animation: a .1s forwards;
+}
+
+#hide_div button:hover .x,
+#hide_div2 button:hover .x {
+    background: red;
+    padding-left: 10px;
+}
+
+@keyframes a {
+    from {
+        right: -100px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+.x {
+    z-index: 1;
+}
+
+.cancel {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    background: red;
+    padding-right: 7px;
+}
+
+textarea {
+    background-color: white;
+    font-size: 200%;
+    width: 50%;
+    height: 30px;
+    word-wrap: break-word;
+}
+
+.score {
+    width: 20%;
+    border: 2px solid black;
+    margin: auto;
+    padding: 2% 3%;
+    border-radius: 2%;
+}
+
+._score {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.score h1 {
+    margin: 0;
+}
+
+#dropdown-div {
+    margin-top: 10px;
+}
+
+#dropdown {
+    cursor: pointer;
+}
