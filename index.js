@@ -61,7 +61,7 @@ button = () => {
     setTimeout(start, 5000);
 
 };
-let remain_time = 100;
+let remain_time = 60;
 time_left = () => {
     document.getElementById("timer").innerText = `Time Left: ${remain_time--}`
     if (remain_time <= '0') {
