@@ -87,7 +87,7 @@ start = () => {
             if (given.length % 5 === 0) {
                 main_player.style.left = `${Math.floor(given.length / 5) * left}%`;
             }
-            if (Math.floor(given.length / 5.2) * left >= 60) {
+            if (Math.floor(given.length / 5.1) * left >= 60) {
                 player_finish = Math.floor(given.length / 5) * left;
                 input.disabled = true;
                 main_player.style.transform = "unset";
