@@ -93,8 +93,8 @@ start = () => {
                 main_player.style.transform = "unset";
                 posi++;
                 let time__ = document.getElementById("timer").innerText;
-                let time_taken = 60 - (parseInt(`${time__[time__.length - 2]}${time__[time__.length - 1]}`));
-                let speed = (((para.length) / 6) / time_taken) * 60;
+                let time_taken = 120 - (parseInt(`${time__[time__.length - 2]}${time__[time__.length - 1]}`));
+                let speed = (((para.length) / 5) / time_taken) * 60;
                 document.getElementById("speed").innerText += `${Math.round(speed)} wpm`;
                 if (localStorage.getItem('best') < Math.round(speed)) {
                     localStorage.setItem('best', Math.round(speed))
